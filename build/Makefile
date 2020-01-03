@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = "C:\Users\Zihan Xu\Desktop\RPG-game\build"
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	"C:\Users\Zihan Xu\cmake-3.16.2-win64-x64\bin\cmake-gui.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -76,6 +65,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	"C:\Users\Zihan Xu\cmake-3.16.2-win64-x64\bin\cmake-gui.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hello
+# Target rules for targets named RPG-game
 
 # Build rule for target.
-hello: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 hello
-.PHONY : hello
+RPG-game: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 RPG-game
+.PHONY : RPG-game
 
 # fast build rule for target.
-hello/fast:
-	$(MAKE) -f CMakeFiles\hello.dir\build.make CMakeFiles/hello.dir/build
-.PHONY : hello/fast
+RPG-game/fast:
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/build
+.PHONY : RPG-game/fast
 
 main.obj: main.cpp.obj
 
@@ -128,7 +128,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) -f CMakeFiles\hello.dir\build.make CMakeFiles/hello.dir/main.cpp.obj
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -137,7 +137,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles\hello.dir\build.make CMakeFiles/hello.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -146,7 +146,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles\hello.dir\build.make CMakeFiles/hello.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -155,9 +155,9 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... hello
-	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... RPG-game
+	@echo ... edit_cache
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

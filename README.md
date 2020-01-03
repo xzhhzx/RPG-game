@@ -5,7 +5,7 @@ The goal of this project is to implement a text based RPG adventure game.
 1. Set up Git
 
    * git clone \<url>
-   * (Work on the project & compile with cmake/make)
+   * (Work on the project & compile with cmake/make, see below)
    * git status
    * git add .
    * git commit -m "comment"

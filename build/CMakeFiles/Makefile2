@@ -52,7 +52,7 @@ CMAKE_BINARY_DIR = "C:\Users\Zihan Xu\Desktop\RPG-game\build"
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/hello.dir/all
+all: CMakeFiles/RPG-game.dir/all
 
 .PHONY : all
 
@@ -62,36 +62,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/hello.dir/clean
+clean: CMakeFiles/RPG-game.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/hello.dir
+# Target rules for target CMakeFiles/RPG-game.dir
 
 # All Build rule for target.
-CMakeFiles/hello.dir/all:
-	$(MAKE) -f CMakeFiles\hello.dir\build.make CMakeFiles/hello.dir/depend
-	$(MAKE) -f CMakeFiles\hello.dir\build.make CMakeFiles/hello.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Zihan Xu\Desktop\RPG-game\build\CMakeFiles" --progress-num=1,2 "Built target hello"
-.PHONY : CMakeFiles/hello.dir/all
+CMakeFiles/RPG-game.dir/all:
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/depend
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Zihan Xu\Desktop\RPG-game\build\CMakeFiles" --progress-num=1,2 "Built target RPG-game"
+.PHONY : CMakeFiles/RPG-game.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/hello.dir/rule: cmake_check_build_system
+CMakeFiles/RPG-game.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Zihan Xu\Desktop\RPG-game\build\CMakeFiles" 2
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/hello.dir/all
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/RPG-game.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Zihan Xu\Desktop\RPG-game\build\CMakeFiles" 0
-.PHONY : CMakeFiles/hello.dir/rule
+.PHONY : CMakeFiles/RPG-game.dir/rule
 
 # Convenience name for target.
-hello: CMakeFiles/hello.dir/rule
+RPG-game: CMakeFiles/RPG-game.dir/rule
 
-.PHONY : hello
+.PHONY : RPG-game
 
 # clean rule for target.
-CMakeFiles/hello.dir/clean:
-	$(MAKE) -f CMakeFiles\hello.dir\build.make CMakeFiles/hello.dir/clean
-.PHONY : CMakeFiles/hello.dir/clean
+CMakeFiles/RPG-game.dir/clean:
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/clean
+.PHONY : CMakeFiles/RPG-game.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
