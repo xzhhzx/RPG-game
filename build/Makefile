@@ -122,6 +122,33 @@ RPG-game/fast:
 	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/build
 .PHONY : RPG-game/fast
 
+engine.obj: engine.cpp.obj
+
+.PHONY : engine.obj
+
+# target to build an object file
+engine.cpp.obj:
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/engine.cpp.obj
+.PHONY : engine.cpp.obj
+
+engine.i: engine.cpp.i
+
+.PHONY : engine.i
+
+# target to preprocess a source file
+engine.cpp.i:
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/engine.cpp.i
+.PHONY : engine.cpp.i
+
+engine.s: engine.cpp.s
+
+.PHONY : engine.s
+
+# target to generate assembly for a file
+engine.cpp.s:
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/engine.cpp.s
+.PHONY : engine.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -149,6 +176,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+player.obj: player.cpp.obj
+
+.PHONY : player.obj
+
+# target to build an object file
+player.cpp.obj:
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/player.cpp.obj
+.PHONY : player.cpp.obj
+
+player.i: player.cpp.i
+
+.PHONY : player.i
+
+# target to preprocess a source file
+player.cpp.i:
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/player.cpp.i
+.PHONY : player.cpp.i
+
+player.s: player.cpp.s
+
+.PHONY : player.s
+
+# target to generate assembly for a file
+player.cpp.s:
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/player.cpp.s
+.PHONY : player.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -158,9 +212,15 @@ help:
 	@echo ... rebuild_cache
 	@echo ... RPG-game
 	@echo ... edit_cache
+	@echo ... engine.obj
+	@echo ... engine.i
+	@echo ... engine.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... player.obj
+	@echo ... player.i
+	@echo ... player.s
 .PHONY : help
 
 

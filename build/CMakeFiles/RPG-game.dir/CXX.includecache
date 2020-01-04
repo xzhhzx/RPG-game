@@ -6,11 +6,25 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Zihan Xu/Desktop/RPG-game/main.cpp
+C:/Users/Zihan Xu/Desktop/RPG-game/engine.cpp
 iostream
 -
 fstream
 -
+string
+-
+engine.h
+C:/Users/Zihan Xu/Desktop/RPG-game/engine.h
+player.h
+C:/Users/Zihan Xu/Desktop/RPG-game/player.h
+
+C:/Users/Zihan Xu/Desktop/RPG-game/engine.h
+iostream
+-
+player.h
+C:/Users/Zihan Xu/Desktop/RPG-game/player.h
+
+C:/Users/Zihan Xu/Desktop/RPG-game/player.h
 string
 -
 
