@@ -20,6 +20,7 @@ public:
     void fight();
     void show_stat();
     void rest();
+    bool isAlive();
 };
 
 #endif

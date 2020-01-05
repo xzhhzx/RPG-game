@@ -39,3 +39,9 @@ void Player::rest(){
     cout<<"Resting..."<<endl;
     HP = maximum_HP;
 }
+
+bool Player::isAlive(){
+    if(this->HP > 0)
+        return true;
+    return false;
+}

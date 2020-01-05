@@ -6,36 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Zihan Xu/Desktop/RPG-game/src/engine.cpp
-iostream
--
-fstream
--
-string
--
-engine.h
-C:/Users/Zihan Xu/Desktop/RPG-game/src/engine.h
-player.h
-C:/Users/Zihan Xu/Desktop/RPG-game/src/player.h
-
-C:/Users/Zihan Xu/Desktop/RPG-game/src/engine.h
-iostream
--
-player.h
-C:/Users/Zihan Xu/Desktop/RPG-game/src/player.h
-
-C:/Users/Zihan Xu/Desktop/RPG-game/src/main.cpp
-iostream
--
-fstream
--
-string
--
-engine.h
-C:/Users/Zihan Xu/Desktop/RPG-game/src/engine.h
-player.h
-C:/Users/Zihan Xu/Desktop/RPG-game/src/player.h
-
 C:/Users/Zihan Xu/Desktop/RPG-game/src/player.cpp
 iostream
 -

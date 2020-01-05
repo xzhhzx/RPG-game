@@ -96,7 +96,7 @@ int main(){
 
 
     // In-game loop
-    while(self->HP > 0){
+    while(self->isAlive()){
         cout<<"Your HP is "<<self->HP<<", what are you going to do next?"<<endl;
         cout<<"1. Fight!" <<endl;
         cout<<"2. Show stat" <<endl;
