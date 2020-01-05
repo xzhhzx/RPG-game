@@ -18,7 +18,7 @@ void Engine::save(string name, int HP, int day_count){
     cin>>file_name;
 
     ofstream csv_table;         // 1. Create file stream instance (locally on stack)
-    csv_table.open(file_name);  // 2. Open file
+    csv_table.open("./saves/" + file_name);  // 2. Open file
     csv_table << name << "," << HP << "," << day_count <<"\n";     // 3. Write file
     csv_table.close();                          // 4. Close file
 }
@@ -30,7 +30,7 @@ void Engine::load(Engine* e, Player* p){
     cin>>file_name;
 
     ifstream csv_table;         // 1. Create file stream instance (locally on stack)
-    csv_table.open(file_name);  // 2. Open file
+    csv_table.open("./saves/" + file_name);  // 2. Open file
     string _, name, HP;
     csv_table >> _ >> name;     // 3. Read file
     cout << _ <<endl;

@@ -56,57 +56,57 @@ include CMakeFiles/RPG-game.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/RPG-game.dir/flags.make
 
-CMakeFiles/RPG-game.dir/main.cpp.obj: CMakeFiles/RPG-game.dir/flags.make
-CMakeFiles/RPG-game.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Zihan Xu\Desktop\RPG-game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RPG-game.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RPG-game.dir\main.cpp.obj -c "C:\Users\Zihan Xu\Desktop\RPG-game\main.cpp"
+CMakeFiles/RPG-game.dir/src/main.cpp.obj: CMakeFiles/RPG-game.dir/flags.make
+CMakeFiles/RPG-game.dir/src/main.cpp.obj: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Zihan Xu\Desktop\RPG-game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RPG-game.dir/src/main.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RPG-game.dir\src\main.cpp.obj -c "C:\Users\Zihan Xu\Desktop\RPG-game\src\main.cpp"
 
-CMakeFiles/RPG-game.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RPG-game.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Zihan Xu\Desktop\RPG-game\main.cpp" > CMakeFiles\RPG-game.dir\main.cpp.i
+CMakeFiles/RPG-game.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RPG-game.dir/src/main.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Zihan Xu\Desktop\RPG-game\src\main.cpp" > CMakeFiles\RPG-game.dir\src\main.cpp.i
 
-CMakeFiles/RPG-game.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RPG-game.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Zihan Xu\Desktop\RPG-game\main.cpp" -o CMakeFiles\RPG-game.dir\main.cpp.s
+CMakeFiles/RPG-game.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RPG-game.dir/src/main.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Zihan Xu\Desktop\RPG-game\src\main.cpp" -o CMakeFiles\RPG-game.dir\src\main.cpp.s
 
-CMakeFiles/RPG-game.dir/engine.cpp.obj: CMakeFiles/RPG-game.dir/flags.make
-CMakeFiles/RPG-game.dir/engine.cpp.obj: ../engine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Zihan Xu\Desktop\RPG-game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RPG-game.dir/engine.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RPG-game.dir\engine.cpp.obj -c "C:\Users\Zihan Xu\Desktop\RPG-game\engine.cpp"
+CMakeFiles/RPG-game.dir/src/engine.cpp.obj: CMakeFiles/RPG-game.dir/flags.make
+CMakeFiles/RPG-game.dir/src/engine.cpp.obj: ../src/engine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Zihan Xu\Desktop\RPG-game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RPG-game.dir/src/engine.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RPG-game.dir\src\engine.cpp.obj -c "C:\Users\Zihan Xu\Desktop\RPG-game\src\engine.cpp"
 
-CMakeFiles/RPG-game.dir/engine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RPG-game.dir/engine.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Zihan Xu\Desktop\RPG-game\engine.cpp" > CMakeFiles\RPG-game.dir\engine.cpp.i
+CMakeFiles/RPG-game.dir/src/engine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RPG-game.dir/src/engine.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Zihan Xu\Desktop\RPG-game\src\engine.cpp" > CMakeFiles\RPG-game.dir\src\engine.cpp.i
 
-CMakeFiles/RPG-game.dir/engine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RPG-game.dir/engine.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Zihan Xu\Desktop\RPG-game\engine.cpp" -o CMakeFiles\RPG-game.dir\engine.cpp.s
+CMakeFiles/RPG-game.dir/src/engine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RPG-game.dir/src/engine.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Zihan Xu\Desktop\RPG-game\src\engine.cpp" -o CMakeFiles\RPG-game.dir\src\engine.cpp.s
 
-CMakeFiles/RPG-game.dir/player.cpp.obj: CMakeFiles/RPG-game.dir/flags.make
-CMakeFiles/RPG-game.dir/player.cpp.obj: ../player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Zihan Xu\Desktop\RPG-game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RPG-game.dir/player.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RPG-game.dir\player.cpp.obj -c "C:\Users\Zihan Xu\Desktop\RPG-game\player.cpp"
+CMakeFiles/RPG-game.dir/src/player.cpp.obj: CMakeFiles/RPG-game.dir/flags.make
+CMakeFiles/RPG-game.dir/src/player.cpp.obj: ../src/player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Zihan Xu\Desktop\RPG-game\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RPG-game.dir/src/player.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RPG-game.dir\src\player.cpp.obj -c "C:\Users\Zihan Xu\Desktop\RPG-game\src\player.cpp"
 
-CMakeFiles/RPG-game.dir/player.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RPG-game.dir/player.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Zihan Xu\Desktop\RPG-game\player.cpp" > CMakeFiles\RPG-game.dir\player.cpp.i
+CMakeFiles/RPG-game.dir/src/player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RPG-game.dir/src/player.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Zihan Xu\Desktop\RPG-game\src\player.cpp" > CMakeFiles\RPG-game.dir\src\player.cpp.i
 
-CMakeFiles/RPG-game.dir/player.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RPG-game.dir/player.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Zihan Xu\Desktop\RPG-game\player.cpp" -o CMakeFiles\RPG-game.dir\player.cpp.s
+CMakeFiles/RPG-game.dir/src/player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RPG-game.dir/src/player.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Zihan Xu\Desktop\RPG-game\src\player.cpp" -o CMakeFiles\RPG-game.dir\src\player.cpp.s
 
 # Object files for target RPG-game
 RPG__game_OBJECTS = \
-"CMakeFiles/RPG-game.dir/main.cpp.obj" \
-"CMakeFiles/RPG-game.dir/engine.cpp.obj" \
-"CMakeFiles/RPG-game.dir/player.cpp.obj"
+"CMakeFiles/RPG-game.dir/src/main.cpp.obj" \
+"CMakeFiles/RPG-game.dir/src/engine.cpp.obj" \
+"CMakeFiles/RPG-game.dir/src/player.cpp.obj"
 
 # External object files for target RPG-game
 RPG__game_EXTERNAL_OBJECTS =
 
-RPG-game.exe: CMakeFiles/RPG-game.dir/main.cpp.obj
-RPG-game.exe: CMakeFiles/RPG-game.dir/engine.cpp.obj
-RPG-game.exe: CMakeFiles/RPG-game.dir/player.cpp.obj
+RPG-game.exe: CMakeFiles/RPG-game.dir/src/main.cpp.obj
+RPG-game.exe: CMakeFiles/RPG-game.dir/src/engine.cpp.obj
+RPG-game.exe: CMakeFiles/RPG-game.dir/src/player.cpp.obj
 RPG-game.exe: CMakeFiles/RPG-game.dir/build.make
 RPG-game.exe: CMakeFiles/RPG-game.dir/linklibs.rsp
 RPG-game.exe: CMakeFiles/RPG-game.dir/objects1.rsp

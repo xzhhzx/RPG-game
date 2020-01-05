@@ -122,86 +122,86 @@ RPG-game/fast:
 	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/build
 .PHONY : RPG-game/fast
 
-engine.obj: engine.cpp.obj
+src/engine.obj: src/engine.cpp.obj
 
-.PHONY : engine.obj
-
-# target to build an object file
-engine.cpp.obj:
-	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/engine.cpp.obj
-.PHONY : engine.cpp.obj
-
-engine.i: engine.cpp.i
-
-.PHONY : engine.i
-
-# target to preprocess a source file
-engine.cpp.i:
-	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/engine.cpp.i
-.PHONY : engine.cpp.i
-
-engine.s: engine.cpp.s
-
-.PHONY : engine.s
-
-# target to generate assembly for a file
-engine.cpp.s:
-	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/engine.cpp.s
-.PHONY : engine.cpp.s
-
-main.obj: main.cpp.obj
-
-.PHONY : main.obj
+.PHONY : src/engine.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+src/engine.cpp.obj:
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/src/engine.cpp.obj
+.PHONY : src/engine.cpp.obj
 
-main.i: main.cpp.i
+src/engine.i: src/engine.cpp.i
 
-.PHONY : main.i
+.PHONY : src/engine.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/engine.cpp.i:
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/src/engine.cpp.i
+.PHONY : src/engine.cpp.i
 
-main.s: main.cpp.s
+src/engine.s: src/engine.cpp.s
 
-.PHONY : main.s
+.PHONY : src/engine.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/engine.cpp.s:
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/src/engine.cpp.s
+.PHONY : src/engine.cpp.s
 
-player.obj: player.cpp.obj
+src/main.obj: src/main.cpp.obj
 
-.PHONY : player.obj
+.PHONY : src/main.obj
 
 # target to build an object file
-player.cpp.obj:
-	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/player.cpp.obj
-.PHONY : player.cpp.obj
+src/main.cpp.obj:
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
 
-player.i: player.cpp.i
+src/main.i: src/main.cpp.i
 
-.PHONY : player.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-player.cpp.i:
-	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/player.cpp.i
-.PHONY : player.cpp.i
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-player.s: player.cpp.s
+src/main.s: src/main.cpp.s
 
-.PHONY : player.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-player.cpp.s:
-	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/player.cpp.s
-.PHONY : player.cpp.s
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/player.obj: src/player.cpp.obj
+
+.PHONY : src/player.obj
+
+# target to build an object file
+src/player.cpp.obj:
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/src/player.cpp.obj
+.PHONY : src/player.cpp.obj
+
+src/player.i: src/player.cpp.i
+
+.PHONY : src/player.i
+
+# target to preprocess a source file
+src/player.cpp.i:
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/src/player.cpp.i
+.PHONY : src/player.cpp.i
+
+src/player.s: src/player.cpp.s
+
+.PHONY : src/player.s
+
+# target to generate assembly for a file
+src/player.cpp.s:
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/src/player.cpp.s
+.PHONY : src/player.cpp.s
 
 # Help Target
 help:
@@ -212,15 +212,15 @@ help:
 	@echo ... rebuild_cache
 	@echo ... RPG-game
 	@echo ... edit_cache
-	@echo ... engine.obj
-	@echo ... engine.i
-	@echo ... engine.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
-	@echo ... player.obj
-	@echo ... player.i
-	@echo ... player.s
+	@echo ... src/engine.obj
+	@echo ... src/engine.i
+	@echo ... src/engine.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
+	@echo ... src/player.obj
+	@echo ... src/player.i
+	@echo ... src/player.s
 .PHONY : help
 
 
