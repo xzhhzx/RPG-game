@@ -126,11 +126,7 @@ int main(){
         }
     }
     
+    cout<<"==== Game over ===="<<endl;
 
-
-
-
-
-
-   return 0;
+    return 0;
 }

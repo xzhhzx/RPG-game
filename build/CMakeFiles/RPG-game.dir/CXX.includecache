@@ -6,20 +6,10 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Zihan Xu/Desktop/RPG-game/engine.cpp
+C:/Users/Zihan Xu/Desktop/RPG-game/player.cpp
 iostream
 -
-fstream
--
-string
--
-engine.h
-C:/Users/Zihan Xu/Desktop/RPG-game/engine.h
-player.h
-C:/Users/Zihan Xu/Desktop/RPG-game/player.h
-
-C:/Users/Zihan Xu/Desktop/RPG-game/engine.h
-iostream
+algorithm
 -
 player.h
 C:/Users/Zihan Xu/Desktop/RPG-game/player.h

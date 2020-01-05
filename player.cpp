@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 #include "player.h"
 using namespace std;
 
@@ -10,8 +11,21 @@ Player::Player(string name, int a, int d, int HP, int max_HP)
 }
 
 void Player::fight(){
-    cout<<"Fighting!!!"<<endl;
-    HP -= 5;
+    cout<<"Fighting!!! A Gobelin appears......"<<endl;
+    Player* enermy = new Player("Gobelin", 13, 5, 50, 50);       // Create enermy
+    while(enermy->HP > 0 && this->HP > 0){              // Fight in rounds until one dies
+        this->HP -= max(enermy->attack_point - this->defense_point, 0);
+        enermy->HP -= max(this->attack_point - enermy->defense_point, 0);
+    }
+    // HP -= 5;
+
+    // if(this->HP > 0){
+    //     cout<<"You are still alive with HP = "<<HP<<endl;
+    //     // return true;
+    // } else {
+    //     cout<<"Game over!"<<endl;
+    //     // return false;
+    // }
 }
 
 void Player::show_stat(){
