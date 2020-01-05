@@ -1,6 +1,7 @@
 #include<iostream>
 #include<fstream>
 #include<string>
+#include<memory>
 #include "engine.h"
 #include "player.h"
 using namespace std;
@@ -69,29 +70,29 @@ int main(){
     if(3 == input) {return 0;}
 
 
-    Engine* engine;
-    Player* self;
+    unique_ptr<Engine> engine;
+    unique_ptr<Player> self;
 
     // New game
     if(1 == input){
         cout<<"Please set a character name: ";
         string name;
         cin>>name;
-        engine = new Engine(0);
-        self = new Player(name, 25, 10, 100, 100);
+        engine = std::make_unique<Engine>(0);
+        self = std::make_unique<Player>(name, 25, 10, 100, 100);
 
     }
 
     // Load game
     else if(2 == input){
-        Engine* engine = NULL;
-        Player* self = NULL;
-        cout<<engine<<endl;
-        Engine::load(engine, self);
+        // Engine* engine = NULL;
+        // Player* self = NULL;
+        // cout<<engine<<endl;
+        // Engine::load(engine, self);
 
         cout<<"Load complete"<<endl;
-        cout<<engine->day_counter<<endl;
-        cout<<self->HP<<endl;
+        // cout<<engine->day_counter<<endl;
+        // cout<<self->HP<<endl;
     }
 
 
