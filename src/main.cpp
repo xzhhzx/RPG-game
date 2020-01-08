@@ -5,6 +5,7 @@
 #include "engine.h"
 #include "player.h"
 #include "trainee.h"
+#include "fighter.h"
 using namespace std;
  
 
@@ -99,6 +100,23 @@ int main(){
 
     // In-game loop
     while(self->isAlive()){
+
+        // cout<<"==========================================="<<endl;
+
+        if(5 == self->level){
+            cout<<"Level up to 5! Could upgrade your character!"<<endl;
+            // self = std::make_unique<Fighter>(self->name, 
+            //                                  "Fighter", 
+            //                                  self->attack_point,
+            //                                  self->defense_point,
+            //                                  self->HP,
+            //                                  self->maximum_HP,
+            //                                  self->level);
+            self = std::make_unique<Fighter>(self);
+            cout<<self->player_type<<endl;
+            // return 0;
+        }
+
         cout<<"===== What are you going to do next? ====="<<endl;
         cout<<"1. Fight!" <<endl;
         cout<<"2. Show stat" <<endl;

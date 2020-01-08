@@ -4,6 +4,7 @@
 
 // 2.Header body
 #include<iostream>
+#include<memory>
 #include "player.h"
 using namespace std;
 
@@ -16,6 +17,7 @@ public:
     void save(string name, int HP, int day_count);
     static void load(Engine* e, Player* p);
     // static void load(Engine& e, Player& p);
+    std::unique_ptr<Player> createPlayer();
 };
 
 

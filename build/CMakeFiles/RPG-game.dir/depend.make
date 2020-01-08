@@ -6,6 +6,7 @@ CMakeFiles/RPG-game.dir/src/engine.cpp.obj: ../src/engine.h
 CMakeFiles/RPG-game.dir/src/engine.cpp.obj: ../src/player.h
 
 CMakeFiles/RPG-game.dir/src/main.cpp.obj: ../src/engine.h
+CMakeFiles/RPG-game.dir/src/main.cpp.obj: ../src/fighter.h
 CMakeFiles/RPG-game.dir/src/main.cpp.obj: ../src/main.cpp
 CMakeFiles/RPG-game.dir/src/main.cpp.obj: ../src/player.h
 CMakeFiles/RPG-game.dir/src/main.cpp.obj: ../src/trainee.h

@@ -9,8 +9,16 @@
 C:/Users/Zihan Xu/Desktop/RPG-game/src/engine.h
 iostream
 -
+memory
+-
 player.h
 C:/Users/Zihan Xu/Desktop/RPG-game/src/player.h
+
+C:/Users/Zihan Xu/Desktop/RPG-game/src/fighter.h
+string
+-
+trainee.h
+C:/Users/Zihan Xu/Desktop/RPG-game/src/trainee.h
 
 C:/Users/Zihan Xu/Desktop/RPG-game/src/main.cpp
 iostream
@@ -27,18 +35,12 @@ player.h
 C:/Users/Zihan Xu/Desktop/RPG-game/src/player.h
 trainee.h
 C:/Users/Zihan Xu/Desktop/RPG-game/src/trainee.h
+fighter.h
+C:/Users/Zihan Xu/Desktop/RPG-game/src/fighter.h
 
 C:/Users/Zihan Xu/Desktop/RPG-game/src/player.h
 string
 -
-
-C:/Users/Zihan Xu/Desktop/RPG-game/src/trainee.cpp
-iostream
--
-algorithm
--
-trainee.h
-C:/Users/Zihan Xu/Desktop/RPG-game/src/trainee.h
 
 C:/Users/Zihan Xu/Desktop/RPG-game/src/trainee.h
 string

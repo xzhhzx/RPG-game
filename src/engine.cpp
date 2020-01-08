@@ -50,6 +50,13 @@ void Engine::load(Engine* e, Player* p){
 }
 
 
+std::unique_ptr<Player> Engine::createPlayer(){
+
+    // if(choice == 1){
+        // return std::make_unique<Fighter>();
+    // }
+    return NULL;
+}
 
 // Helper function
 // string serialize(string file_name, Player& p){
