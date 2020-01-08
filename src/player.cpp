@@ -36,6 +36,7 @@ void Player::fight(){
 
 void Player::show_stat(){
     cout<<"Player "<< this->name << " status:"<<endl;
+    cout<<"Character type: "<<player_type<<endl;
     cout<<"Attack point: "<< attack_point <<endl;
     cout<<"Defense point: "<< defense_point <<endl;
     cout<<"HP: "<< HP << "/" << maximum_HP<<endl;

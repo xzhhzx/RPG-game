@@ -104,7 +104,9 @@ int main(){
         // cout<<"==========================================="<<endl;
 
         if(5 == self->level){
-            cout<<"Level up to 5! Could upgrade your character!"<<endl;
+            cout<<"Level up to 5! Could upgrade your character! Please choose from below:"<<endl;
+            cout<<"1. Fighter"<<endl;
+            cout<<"2. Mage"<<endl;
             // self = std::make_unique<Fighter>(self->name, 
             //                                  "Fighter", 
             //                                  self->attack_point,
@@ -112,12 +114,19 @@ int main(){
             //                                  self->HP,
             //                                  self->maximum_HP,
             //                                  self->level);
-            self = std::make_unique<Fighter>(self);
-            cout<<self->player_type<<endl;
+            
+            // self = std::make_unique<Fighter>(self);
+            
+            // Let user to choose their upgrade character
+            int choice;
+            cin>>choice;
+            self = engine->createPlayer(self, choice);   // 照猫画虎（所以要传入self作为参数），然后把“虎”指针返回给原先的“猫”指针
+
+            self->show_stat();
             // return 0;
         }
 
-        cout<<"===== What are you going to do next? ====="<<endl;
+        cout<<"........................ What are you going to do next? ........................"<<endl;
         cout<<"1. Fight!" <<endl;
         cout<<"2. Show stat" <<endl;
         cout<<"3. Save" <<endl;

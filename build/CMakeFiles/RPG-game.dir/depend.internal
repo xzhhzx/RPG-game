@@ -4,7 +4,10 @@
 CMakeFiles/RPG-game.dir/src/engine.cpp.obj
  C:/Users/Zihan Xu/Desktop/RPG-game/src/engine.cpp
  C:/Users/Zihan Xu/Desktop/RPG-game/src/engine.h
+ C:/Users/Zihan Xu/Desktop/RPG-game/src/fighter.h
+ C:/Users/Zihan Xu/Desktop/RPG-game/src/mage.h
  C:/Users/Zihan Xu/Desktop/RPG-game/src/player.h
+ C:/Users/Zihan Xu/Desktop/RPG-game/src/trainee.h
 CMakeFiles/RPG-game.dir/src/main.cpp.obj
  C:/Users/Zihan Xu/Desktop/RPG-game/src/engine.h
  C:/Users/Zihan Xu/Desktop/RPG-game/src/fighter.h

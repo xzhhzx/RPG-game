@@ -11,7 +11,10 @@ class Trainee: public Player{
 
 public:
     Trainee(string name, string type, int a, int d, int HP, int max_HP, int level)
-        :Player(name, type, a, d, HP, max_HP, level) {}
+        :Player(name, type, a, d, HP, max_HP, level) {
+
+            cout<<"+.+.+.+.+.+.+.+. Trainee constructor +.+.+.+.+.+.+.+."<<endl;
+        }
 };
 
 #endif

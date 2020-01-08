@@ -3,6 +3,8 @@
 #include<string>
 #include "engine.h"
 #include "player.h"
+#include "fighter.h"
+#include "mage.h"
 using namespace std;
 
 Engine::Engine(int day_counter)
@@ -50,11 +52,16 @@ void Engine::load(Engine* e, Player* p){
 }
 
 
-std::unique_ptr<Player> Engine::createPlayer(){
+std::unique_ptr<Player> Engine::createPlayer(const unique_ptr<Player>& player_ptr, int choice){
 
-    // if(choice == 1){
-        // return std::make_unique<Fighter>();
-    // }
+    if(choice == 1){
+        cout<<"Choice is 1"<<endl;
+        return std::make_unique<Fighter>(player_ptr);
+    }
+    else if(choice == 2){
+        return std::make_unique<Mage>(player_ptr);
+    }
+    
     return NULL;
 }
 

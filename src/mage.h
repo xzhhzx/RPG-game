@@ -11,6 +11,9 @@ class Mage: public Trainee{
 public:
     Mage(string name, string type, int a, int d, int HP, int max_HP, int level)
         :Trainee(name, type, a, d, HP, max_HP, level) {}
+    
+    Mage(const std::unique_ptr<Player>& ptr)                 // Need to be const& ?
+        :Trainee(ptr->name, "Mage", ptr->attack_point, ptr->defense_point, ptr->HP, ptr->maximum_HP, ptr->level) {}
 };
 
 #endif

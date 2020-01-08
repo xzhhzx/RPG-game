@@ -17,7 +17,7 @@ public:
     void save(string name, int HP, int day_count);
     static void load(Engine* e, Player* p);
     // static void load(Engine& e, Player& p);
-    std::unique_ptr<Player> createPlayer();
+    std::unique_ptr<Player> createPlayer(const unique_ptr<Player>& player_ptr, int choice);
 };
 
 
