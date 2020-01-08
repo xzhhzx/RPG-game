@@ -14,9 +14,10 @@ public:
     int defense_point;
     int HP;
     int maximum_HP;
+    int level;
 
 public:    
-    Player(string name, int a, int d, int HP, int max_HP);
+    Player(string name, int a, int d, int HP, int max_HP, int level);
     void fight();
     void show_stat();
     void rest();

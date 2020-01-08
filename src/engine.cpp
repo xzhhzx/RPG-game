@@ -32,7 +32,7 @@ void Engine::load(Engine* e, Player* p){
     ifstream csv_table;         // 1. Create file stream instance (locally on stack)
     csv_table.open("./saves/" + file_name);  // 2. Open file
     string _, name, HP;
-    csv_table >> _ >> name;     // 3. Read file
+    csv_table >> _ >> name;     // 3. Read file (have to split!)
     cout << _ <<endl;
     // cout << name <<endl;
     csv_table.close();          // 4. Close file
@@ -40,11 +40,11 @@ void Engine::load(Engine* e, Player* p){
     // e = new Engine(day_counter);
     // p = new Player(name, a, d, HP, max_HP);    
     e = new Engine(18);
-    p = new Player("Zihan", 25, 10, 17, 100);
+    p = new Player("Zihan", 25, 10, 17, 100,1);
 
     cout<<e->day_counter<<endl;
     cout<<p->HP<<endl;
-    cout<<e<<endl;                  // 'e' had changed!
+    cout<<e<<endl;                  // ('e' had changed!)
     cout<<"Return"<<endl;
     return;
 }

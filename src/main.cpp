@@ -79,7 +79,7 @@ int main(){
         string name;
         cin>>name;
         engine = std::make_unique<Engine>(0);
-        self = std::make_unique<Player>(name, 25, 10, 100, 100);
+        self = std::make_unique<Player>(name, 25, 10, 100, 100, 1);
 
     }
 
@@ -98,7 +98,7 @@ int main(){
 
     // In-game loop
     while(self->isAlive()){
-        cout<<"Your HP is "<<self->HP<<", what are you going to do next?"<<endl;
+        cout<<"===== What are you going to do next? ====="<<endl;
         cout<<"1. Fight!" <<endl;
         cout<<"2. Show stat" <<endl;
         cout<<"3. Save" <<endl;
