@@ -4,15 +4,15 @@
 using namespace std;
 
 
-Player::Player(string name, int a, int d, int HP, int max_HP, int level)
-    :name{name}, attack_point{a}, defense_point{d}, HP{HP}, maximum_HP{max_HP}, level{level}
+Player::Player(string name, string type, int a, int d, int HP, int max_HP, int level)
+    :name{name}, player_type{type}, attack_point{a}, defense_point{d}, HP{HP}, maximum_HP{max_HP}, level{level}
 {
     
 }
 
 void Player::fight(){
     cout<<"Fighting!!! A Gobelin appears......"<<endl;
-    Player* enermy = new Player("Gobelin", 13, 5, 50, 50, 1);       // Create enermy
+    Player* enermy = new Player("Gobelin", "Enermy", 13, 5, 50, 50, 1);       // Create enermy
     while(enermy->HP > 0 && this->HP > 0){              // Fight in rounds until one dies
         this->HP -= max(enermy->attack_point - this->defense_point, 0);
         enermy->HP -= max(this->attack_point - enermy->defense_point, 0);

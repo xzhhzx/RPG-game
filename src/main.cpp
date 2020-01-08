@@ -4,6 +4,7 @@
 #include<memory>
 #include "engine.h"
 #include "player.h"
+#include "trainee.h"
 using namespace std;
  
 
@@ -79,7 +80,7 @@ int main(){
         string name;
         cin>>name;
         engine = std::make_unique<Engine>(0);
-        self = std::make_unique<Player>(name, 25, 10, 100, 100, 1);
+        self = std::make_unique<Trainee>(name, "Trainee", 25, 10, 100, 100, 1);         // Start game with trainee
 
     }
 

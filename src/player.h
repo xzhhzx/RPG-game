@@ -10,6 +10,7 @@ class Player{
 
 public:
     const string name;
+    string player_type;
     int attack_point;
     int defense_point;
     int HP;
@@ -17,7 +18,7 @@ public:
     int level;
 
 public:    
-    Player(string name, int a, int d, int HP, int max_HP, int level);
+    Player(string name, string type, int a, int d, int HP, int max_HP, int level);
     void fight();
     void show_stat();
     void rest();

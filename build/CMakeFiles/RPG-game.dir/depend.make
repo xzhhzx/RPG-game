@@ -8,7 +8,12 @@ CMakeFiles/RPG-game.dir/src/engine.cpp.obj: ../src/player.h
 CMakeFiles/RPG-game.dir/src/main.cpp.obj: ../src/engine.h
 CMakeFiles/RPG-game.dir/src/main.cpp.obj: ../src/main.cpp
 CMakeFiles/RPG-game.dir/src/main.cpp.obj: ../src/player.h
+CMakeFiles/RPG-game.dir/src/main.cpp.obj: ../src/trainee.h
 
 CMakeFiles/RPG-game.dir/src/player.cpp.obj: ../src/player.cpp
 CMakeFiles/RPG-game.dir/src/player.cpp.obj: ../src/player.h
+
+CMakeFiles/RPG-game.dir/src/trainee.cpp.obj: ../src/player.h
+CMakeFiles/RPG-game.dir/src/trainee.cpp.obj: ../src/trainee.cpp
+CMakeFiles/RPG-game.dir/src/trainee.cpp.obj: ../src/trainee.h
 

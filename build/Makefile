@@ -203,6 +203,33 @@ src/player.cpp.s:
 	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/src/player.cpp.s
 .PHONY : src/player.cpp.s
 
+src/trainee.obj: src/trainee.cpp.obj
+
+.PHONY : src/trainee.obj
+
+# target to build an object file
+src/trainee.cpp.obj:
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/src/trainee.cpp.obj
+.PHONY : src/trainee.cpp.obj
+
+src/trainee.i: src/trainee.cpp.i
+
+.PHONY : src/trainee.i
+
+# target to preprocess a source file
+src/trainee.cpp.i:
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/src/trainee.cpp.i
+.PHONY : src/trainee.cpp.i
+
+src/trainee.s: src/trainee.cpp.s
+
+.PHONY : src/trainee.s
+
+# target to generate assembly for a file
+src/trainee.cpp.s:
+	$(MAKE) -f CMakeFiles\RPG-game.dir\build.make CMakeFiles/RPG-game.dir/src/trainee.cpp.s
+.PHONY : src/trainee.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -221,6 +248,9 @@ help:
 	@echo ... src/player.obj
 	@echo ... src/player.i
 	@echo ... src/player.s
+	@echo ... src/trainee.obj
+	@echo ... src/trainee.i
+	@echo ... src/trainee.s
 .PHONY : help
 
 

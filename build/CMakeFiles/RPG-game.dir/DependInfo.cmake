@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Zihan Xu/Desktop/RPG-game/src/engine.cpp" "C:/Users/Zihan Xu/Desktop/RPG-game/build/CMakeFiles/RPG-game.dir/src/engine.cpp.obj"
   "C:/Users/Zihan Xu/Desktop/RPG-game/src/main.cpp" "C:/Users/Zihan Xu/Desktop/RPG-game/build/CMakeFiles/RPG-game.dir/src/main.cpp.obj"
   "C:/Users/Zihan Xu/Desktop/RPG-game/src/player.cpp" "C:/Users/Zihan Xu/Desktop/RPG-game/build/CMakeFiles/RPG-game.dir/src/player.cpp.obj"
+  "C:/Users/Zihan Xu/Desktop/RPG-game/src/trainee.cpp" "C:/Users/Zihan Xu/Desktop/RPG-game/build/CMakeFiles/RPG-game.dir/src/trainee.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -39,8 +39,8 @@ void Engine::load(Engine* e, Player* p){
 
     // e = new Engine(day_counter);
     // p = new Player(name, a, d, HP, max_HP);    
-    e = new Engine(18);
-    p = new Player("Zihan", 25, 10, 17, 100,1);
+    // e = new Engine(18);
+    // p = new Player("Zihan", 25, 10, 17, 100,1);
 
     cout<<e->day_counter<<endl;
     cout<<p->HP<<endl;
