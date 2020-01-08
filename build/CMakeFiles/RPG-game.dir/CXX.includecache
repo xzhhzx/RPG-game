@@ -6,22 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Zihan Xu/Desktop/RPG-game/src/engine.cpp
-iostream
--
-fstream
--
-string
--
-engine.h
-C:/Users/Zihan Xu/Desktop/RPG-game/src/engine.h
-player.h
-C:/Users/Zihan Xu/Desktop/RPG-game/src/player.h
-fighter.h
-C:/Users/Zihan Xu/Desktop/RPG-game/src/fighter.h
-mage.h
-C:/Users/Zihan Xu/Desktop/RPG-game/src/mage.h
-
 C:/Users/Zihan Xu/Desktop/RPG-game/src/engine.h
 iostream
 -
@@ -31,12 +15,6 @@ player.h
 C:/Users/Zihan Xu/Desktop/RPG-game/src/player.h
 
 C:/Users/Zihan Xu/Desktop/RPG-game/src/fighter.h
-string
--
-trainee.h
-C:/Users/Zihan Xu/Desktop/RPG-game/src/trainee.h
-
-C:/Users/Zihan Xu/Desktop/RPG-game/src/mage.h
 string
 -
 trainee.h
