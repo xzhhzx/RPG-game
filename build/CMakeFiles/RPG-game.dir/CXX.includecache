@@ -6,37 +6,41 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Zihan Xu/Desktop/RPG-game/src/engine.h
-iostream
--
-memory
--
-player.h
-C:/Users/Zihan Xu/Desktop/RPG-game/src/player.h
-
-C:/Users/Zihan Xu/Desktop/RPG-game/src/fighter.h
-string
--
-trainee.h
-C:/Users/Zihan Xu/Desktop/RPG-game/src/trainee.h
-
-C:/Users/Zihan Xu/Desktop/RPG-game/src/main.cpp
+C:/Users/Zihan Xu/Desktop/RPG-game/src/engine.cpp
 iostream
 -
 fstream
 -
 string
 -
-memory
--
 engine.h
 C:/Users/Zihan Xu/Desktop/RPG-game/src/engine.h
 player.h
 C:/Users/Zihan Xu/Desktop/RPG-game/src/player.h
-trainee.h
-C:/Users/Zihan Xu/Desktop/RPG-game/src/trainee.h
 fighter.h
 C:/Users/Zihan Xu/Desktop/RPG-game/src/fighter.h
+mage.h
+C:/Users/Zihan Xu/Desktop/RPG-game/src/mage.h
+
+C:/Users/Zihan Xu/Desktop/RPG-game/src/engine.h
+iostream
+-
+memory
+-
+player.h
+C:/Users/Zihan Xu/Desktop/RPG-game/src/player.h
+
+C:/Users/Zihan Xu/Desktop/RPG-game/src/fighter.h
+string
+-
+trainee.h
+C:/Users/Zihan Xu/Desktop/RPG-game/src/trainee.h
+
+C:/Users/Zihan Xu/Desktop/RPG-game/src/mage.h
+string
+-
+trainee.h
+C:/Users/Zihan Xu/Desktop/RPG-game/src/trainee.h
 
 C:/Users/Zihan Xu/Desktop/RPG-game/src/player.h
 string

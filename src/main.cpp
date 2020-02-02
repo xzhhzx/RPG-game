@@ -10,47 +10,6 @@ using namespace std;
  
 
 
-// void fight(int& HP){
-//     cout<<"Fighting!!!"<<endl;
-//     HP -= 5;
-// }
-
-// void show_stat(){
-//     cout<<"Player status:"<<endl;
-// }
-
-// void save(int HP, string name){
-
-//     cout<<"Input file name: ";
-//     string file_name;
-//     cin>>file_name;
-
-//     ofstream csv_table;         // 1. Create file stream instance (locally on stack)
-//     csv_table.open(file_name);  // 2. Open file
-//     // csv_table.write("Name,");
-//     csv_table << "Name," << name << "\n"
-//               << "HP," << HP <<"\n";
-//     csv_table.close();
-// }
-
-// void load(){
-//     cout<<"Input file name: ";
-//     string file_name;
-//     cin>>file_name;
-
-//     ifstream csv_table;         // 1. Create file stream instance (locally on stack)
-//     csv_table.open(file_name);  // 2. Open file
-//     // csv_table.write("Name,");
-//     string _, name, HP;
-//     csv_table >> _ >> name;
-//     cout << _ <<endl;
-//     cout << name <<endl;
-//     csv_table.close();
-//     cin>>_;
-// }
-
-
-
 int main(){
 
     
@@ -71,9 +30,8 @@ int main(){
     // Exit
     if(3 == input) {return 0;}
 
-
-    unique_ptr<Engine> engine;
-    unique_ptr<Player> self;
+    unique_ptr<Engine> engine;      // Engine
+    unique_ptr<Player> self;        // Player
 
     // New game
     if(1 == input){
@@ -82,48 +40,34 @@ int main(){
         cin>>name;
         engine = std::make_unique<Engine>(0);
         self = std::make_unique<Trainee>(name, "Trainee", 25, 10, 100, 100, 1);         // Start game with trainee
-
     }
 
     // Load game
-    else if(2 == input){
-        // Engine* engine = NULL;
-        // Player* self = NULL;
-        // cout<<engine<<endl;
-        // Engine::load(engine, self);
-
+    else if(2 == input){    
+        engine = std::make_unique<Engine>(0);
+        self = engine->load();
         cout<<"Load complete"<<endl;
-        // cout<<engine->day_counter<<endl;
-        // cout<<self->HP<<endl;
     }
 
 
     // In-game loop
+    bool UPGRADED = false;
     while(self->isAlive()){
 
         // cout<<"==========================================="<<endl;
 
-        if(5 == self->level){
+        if(5 == self->level && !UPGRADED){
             cout<<"Level up to 5! Could upgrade your character! Please choose from below:"<<endl;
             cout<<"1. Fighter"<<endl;
             cout<<"2. Mage"<<endl;
-            // self = std::make_unique<Fighter>(self->name, 
-            //                                  "Fighter", 
-            //                                  self->attack_point,
-            //                                  self->defense_point,
-            //                                  self->HP,
-            //                                  self->maximum_HP,
-            //                                  self->level);
-            
-            // self = std::make_unique<Fighter>(self);
             
             // Let user to choose their upgrade character
             int choice;
             cin>>choice;
-            self = engine->createPlayer(self, choice);   // 照猫画虎（所以要传入self作为参数），然后把“虎”指针返回给原先的“猫”指针
+            self = engine->upgradePlayer(self, choice);   // 照猫画虎（所以要传入self作为参数），然后把“虎”指针返回给原先的“猫”指针
 
             self->show_stat();
-            // return 0;
+            UPGRADED = true;
         }
 
         cout<<"........................ What are you going to do next? ........................"<<endl;
@@ -144,12 +88,13 @@ int main(){
             self->show_stat();
             break;
         case 3:
-            engine->save(self->name, self->HP, engine->day_counter);
+            engine->save(engine, self);
         case 4:
             return 0;
         case 5:
             engine->day_counter++;
             self->rest();
+            break;
         default:
             cout<<"Invalid input number!"<<endl;
         }
