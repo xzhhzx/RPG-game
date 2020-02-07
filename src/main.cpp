@@ -64,7 +64,7 @@ int main(){
             // Let user to choose their upgrade character
             int choice;
             cin>>choice;
-            self = engine->upgradePlayer(self, choice);   // 照猫画虎（所以要传入self作为参数），然后把“虎”指针返回给原先的“猫”指针
+            self = engine->upgradePlayer(self, choice); 
 
             self->show_stat();
             UPGRADED = true;
